@@ -2,19 +2,17 @@ def main():
     counter = 1
 
     while(counter <= 100):
-        check(counter)
+        print(check(counter))
         counter += 1
 
 def check(number):
-    response = ""
     if (number % 3 == 0 and number % 5 == 0):
-        response += "FizzBuzz"
+        return "FizzBuzz"
     elif (number % 3 == 0):
-        response += "Fizz"
+        return "Fizz"
     elif (number % 5 == 0):
-        response += "Buzz"
+        return"Buzz"
     else:
-        response += str(number)
-    print(response)
+        return number
 
 main()
